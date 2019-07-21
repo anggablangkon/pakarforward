@@ -1,1 +1,1 @@
-#Kerjamsama pembuatan sistem pakar 
+#Kerjasama pembuatan sistem pakar 
