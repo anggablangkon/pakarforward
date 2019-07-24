@@ -1,0 +1,3 @@
+@if(Session::get('id') == false)
+	<meta http-equiv="refresh" content="0; url={{url('/')}}">
+@endif

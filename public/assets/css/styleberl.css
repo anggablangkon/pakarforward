@@ -1,0 +1,45 @@
+/** 
+	css ini dibuat oleh team it berl cosmetics	
+	created by : Berl
+**/
+
+.tect-hitam{
+  color: black;
+}
+
+.font-tebal{
+	font-weight: bold;
+}
+
+.btn-full{
+	width: 100%;
+} 
+
+.btn-primaryberl {
+  background: radial-gradient(ellipse  farthest-corner at right bottom, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.btn-cokelatberl {
+   background: radial-gradient(ellipse  farthest-corner at right bottom, #543636 0%, #FFFFAC 8%, #543636 25%, #543636 62.5%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #543636 25%, #543636 62.5%, #543636 100%);
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+/* background untuk sidebar dan drawer */ 
+.drawer-black{
+  background: black;
+}
+
+.bg-black{
+  background: black;
+}
+
+/* membuat span */
+[lang="en"] {
+        color: blue;
+}
+
