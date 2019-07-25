@@ -33,7 +33,7 @@
 
 
         <!-- HEADING -->
-        {{-- <div class="py-2 drawer-heading">
+        {{-- <div lass="py-2 drawer-heading">
           Components
         </div> --}}
 
@@ -57,9 +57,9 @@
             <ul class="collapse " id="uiComponentsMenu">
               <li class="drawer-menu-item "><a href="{{url('/datapengguna')}}">Data Pengguna</a></li>
               <li class="drawer-menu-item "><a href="{{url('/datapengguna')}}">Data Member</a></li>
-              <li class="drawer-menu-item "><a href="{{url('/datapengguna')}}">Data Keluhan</a></li>
+              <li class="drawer-menu-item "><a href="{{url('/datakeluhan')}}">Data Keluhan</a></li>
               <li class="drawer-menu-item "><a href="{{url('/datapengguna')}}">Data Pertanyaan</a></li>
-              <li class="drawer-menu-item "><a href="{{url('/datapengguna')}}">Data Solusi</a></li>
+              <li class="drawer-menu-item "><a href="{{url('/datasolusi')}}">Data Solusi</a></li>
               <li class="drawer-menu-item "><a href="{{url('/datapengguna')}}">Data Basis Pengetahuan</a></li>
             </ul>
           </li>

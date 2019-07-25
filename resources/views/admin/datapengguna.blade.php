@@ -120,7 +120,7 @@
     <div id="id{{$value->id}}" class="w3-modal" style="margin-top: 20px;">
         <div class="w3-modal-content w3-card-4">
         <form method="post" action="{{url('/updatedatapengguna')}}">
-          <header class="w3-container w3-indigo"> 
+          <header class="w3-container w3-grey"> 
             <span onclick="document.getElementById('id{{$value->id}}').style.display='none'" 
                 class="w3-button w3-display-topright">&times;</span>
                 <!-- header modal -->
@@ -161,14 +161,13 @@
                             @endif
                             -- Status Aktif --
                         </option>
-                        <option value="1"> Admin </option>
-                        <option value="2"> Dokter </option>
-                        <option value="3"> Perawat </option>
+                        <option value="1"> Admin Pusat </option>
+                        <option value="2"> Admin Biasa </option>
                     </select>
                 </div>
                 </div>
             </div>
-            <footer class="w3-container w3-indigo">
+            <footer class="w3-container w3-grey">
                 <!-- footer modal -->
                 <br/>
                 <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
