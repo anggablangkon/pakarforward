@@ -59,7 +59,7 @@
                                 <div class="text-center">
                                     <input type="submit" name="submit" class="btn btn-primary btn-full font-tebal" value="Masuk">
                                     &nbsp;
-                                    <input type="reset" name="reset" class="btn btn-danger btn-full font-tebal"  value="Lupa Password">
+                                    <a href="{{url('/register')}}" class="btn btn-danger btn-full font-tebal">Daftar Terlebih Dahulu</a>
                                     &nbsp;
                                 </div>
                             </form>

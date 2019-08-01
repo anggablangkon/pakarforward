@@ -45,6 +45,8 @@ class LoginSistemController extends Controller
             //     Session::put($value->nama_fitur, $value->status);
             // }
 
+              return redirect('/dashboard');
+            
             if(Session::get('hakakses') == 1){
     		  return redirect('/dashboard');
             }elseif(Session::get('hakakses') == 2){

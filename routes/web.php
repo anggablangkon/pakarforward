@@ -33,10 +33,43 @@ Route::post('/createdatakeluhan', 'DataKeluhanController@create');
 Route::get('/deletedatakeluhan/{id}', 'DataKeluhanController@delete');
 Route::post('/updatekeluhan', 'DataKeluhanController@update');
 
+#Route  untuk data keluhan
+Route::get('/datamember', 'DataMemberController@index');
+Route::post('/createdatakeluhan', 'DataKeluhanController@create');
+Route::get('/deletedatakeluhan/{id}', 'DataKeluhanController@delete');
+Route::post('/updatekeluhan', 'DataKeluhanController@update');
+
 #route untuk data solusi
 Route::get('/datasolusi', 'DataSolusiController@index');
 Route::post('/createdatasolusi', 'DataSolusiController@create');
 Route::get('/deletedatasolusi/{id}', 'DataSolusiController@delete');
 Route::post('/updatesolusi', 'DataSolusiController@update');
 
+#route untuk data penyakit
+Route::get('/datapenyakit', 'DataPenyakitController@index');
+Route::post('/createdatapenyakit', 'DataPenyakitController@create');
+Route::get('/deletedatasolusi/{id}', 'DataPenyakitController@delete');
+Route::post('/updatepenyakit', 'DataPenyakitController@update');
 
+#Route untuk data basis pengetahuan
+Route::get('/databasispengetahuan', 'DataBasisController@index');
+Route::post('/createdatabasispengetahuan', 'DataBasisController@create');
+Route::get('/deletebasispengetahuan/{id}', 'DataBasisController@delete');
+
+
+
+#Routinf untuk akses sistem pakar
+Route::get('/aksessistempakar', 'KepakaranController@index');
+Route::post('/proseskapakaran', 'KepakaranController@proses');
+Route::post('/savehistory', 'KepakaranController@save');
+Route::get('/historyakses', 'KepakaranController@listhistory');
+
+#routirn dignakan untuk pengguna
+Route::get('/register', 'PenggunaController@register');
+Route::post('/prosesregister', 'PenggunaController@prosesregister');
+Route::get('/kepakaranpasien', 'PenggunaController@prosespakar');
+Route::get('/listhistorypakarpasien', 'PenggunaController@listhistory');
+
+#route untuk laporan
+Route::get('/laporanpasienperid', 'PenggunaController@laporanpasienperid');
+Route::get('/laporanpasienkeseluruhan', 'LaporanController@alllaporan');

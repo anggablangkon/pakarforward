@@ -56,14 +56,21 @@
             </a>
             <ul class="collapse " id="uiComponentsMenu">
               <li class="drawer-menu-item "><a href="{{url('/datapengguna')}}">Data Pengguna</a></li>
-              <li class="drawer-menu-item "><a href="{{url('/datapengguna')}}">Data Member</a></li>
+              <li class="drawer-menu-item "><a href="{{url('/datamember')}}">Data Member</a></li>
               <li class="drawer-menu-item "><a href="{{url('/datakeluhan')}}">Data Keluhan</a></li>
-              <li class="drawer-menu-item "><a href="{{url('/datapengguna')}}">Data Pertanyaan</a></li>
+              {{-- <li class="drawer-menu-item "><a href="{{url('/datapengguna')}}">Data Pertanyaan</a></li> --}}
               <li class="drawer-menu-item "><a href="{{url('/datasolusi')}}">Data Solusi</a></li>
-              <li class="drawer-menu-item "><a href="{{url('/datapengguna')}}">Data Basis Pengetahuan</a></li>
+              <li class="drawer-menu-item "><a href="{{url('/datapenyakit')}}">Data Penyakit</a></li>
+              <li class="drawer-menu-item "><a href="{{url('/databasispengetahuan')}}">Data Basis Pengetahuan</a></li>
+              <li class="drawer-menu-item "><a href="{{url('/historyakses')}}">Data History Akses Kepakaran</a></li>
             </ul>
           </li>
-
+          <li class="drawer-menu-item">
+            <a href="{{url('/aksessistempakar')}}">
+              <i class="material-icons">leak_add</i>
+              <span class="drawer-menu-text">Akses Sistem Pakar</span>
+            </a>
+          </li>
           <li class="drawer-menu-item">
             <a href="{{url('/logout')}}">
               <i class="material-icons">exit_to_app</i>
@@ -78,6 +85,38 @@
           </li> --}}
         </ul>
 
+        @endif
+
+        @if(Session::get('hakakses') != 1)
+        <ul class="drawer-menu" id="mainMenu" data-children=".drawer-submenu">
+          <li class="drawer-menu-item active ">
+            <a href="{{url('/dashboard')}}" class="collapsed">
+              <i class="material-icons">dashboard</i>
+              <span class="drawer-menu-text"> Dashboard</span>
+            </a>
+          </li>
+          <li class="drawer-menu-item">
+            <a href="{{url('/kepakaranpasien')}}">
+              <i class="material-icons">leak_add</i>
+              <span class="drawer-menu-text">Proses Sistem Pakar</span>
+            </a>
+          </li>
+          <li class="drawer-menu-item drawer-submenu">
+            <a data-toggle="collapse" data-parent="#mainMenu" href="#" data-target="#uiComponentsMenu" aria-controls="uiComponentsMenu" aria-expanded="false" class="collapsed">
+              <i class="material-icons">library_books</i>
+              <span class="drawer-menu-text"> Master Data</span>
+            </a>
+            <ul class="collapse " id="uiComponentsMenu">
+              <li class="drawer-menu-item "><a href="{{url('/listhistorypakarpasien')}}">History Menggunakan Sistem</a></li>
+            </ul>
+          </li>
+          <li class="drawer-menu-item">
+            <a href="{{url('/logout')}}">
+              <i class="material-icons">exit_to_app</i>
+              <span class="drawer-menu-text">Logout</span>
+            </a>
+          </li>
+        </ul>
         @endif
 
 
